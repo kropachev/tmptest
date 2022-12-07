@@ -1,6 +1,10 @@
 name: wikiupdate
-run-name: ${{ github.actor }} wiki update
-on: [push]
+
+
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   wiki-update:
