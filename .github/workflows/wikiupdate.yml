@@ -1,10 +1,9 @@
 name: wikiupdate
 
-
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   wiki-update:
