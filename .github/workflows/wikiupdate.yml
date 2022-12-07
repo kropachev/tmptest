@@ -17,7 +17,7 @@ jobs:
           find ./docs/ -type f -name "*.md" -exec sed -i 's/.md)/)/g' {} \;
       
       - name: Sync Wiki
-        uses: joeizzard/action-wiki-sync@v1
+        uses: joeizzard/action-wiki-sync@master
         with:
           username: kropachev
           access_token: ${{ secrets.GITHUB_TOKEN }}
