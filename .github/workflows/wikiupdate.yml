@@ -1,0 +1,24 @@
+name: wikiupdate
+run-name: ${{ github.actor }} wiki update
+on: [push]
+
+jobs:
+  wiki-update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Fix links for Wiki engine
+        run: |
+          mv -f ./docs/Readme.md ./docs/_Sidebar.md
+          find ./docs/ -type f -name "*.md" -exec sed -i 's/.md#/#/g' {} \;
+          find ./docs/ -type f -name "*.md" -exec sed -i 's/.md)/)/g' {} \;
+      
+        uses: joeizzard/action-wiki-sync@v1
+      - name: Sync Wiki
+        with:
+          username: kropachev
+          access_token: ${{ secrets.GITHUB_TOKEN }}
+          wiki_folder: docs
+          commit_username: 'kropachev'
+          commit_email: '87801165+kropachev@users.noreply.github.com'
+          commit_message: 'action: wiki sync'
