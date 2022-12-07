@@ -13,8 +13,8 @@ jobs:
           find ./docs/ -type f -name "*.md" -exec sed -i 's/.md#/#/g' {} \;
           find ./docs/ -type f -name "*.md" -exec sed -i 's/.md)/)/g' {} \;
       
-        uses: joeizzard/action-wiki-sync@v1
       - name: Sync Wiki
+        uses: joeizzard/action-wiki-sync@v1
         with:
           username: kropachev
           access_token: ${{ secrets.GITHUB_TOKEN }}
