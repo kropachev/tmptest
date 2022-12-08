@@ -1,8 +1,9 @@
-# tmptest
+# tmptest WIKI
 
-Docs folder  readme
+Wiki readme, More!!!
 
-From docs folder
+wiki
+
 Once more
 
 new line
