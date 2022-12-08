@@ -26,9 +26,9 @@ jobs:
         with:
           source: docs
           destination: wiki
-          token: ${{ secrets.GITHUB_TOKEN }}
-          gitAuthorName: ${{ github.event.pusher.name }}
-          gitAuthorEmail: ${{ github.event.pusher.email }}
+          token: ${{ secrets.NEWRELIC_BOT_TOKEN }}
+          gitAuthorName: ${{ env.GIT_AUTHOR_NAME }}
+          gitAuthorEmail: ${{ env.GIT_AUTHOR_EMAIL }}
 
   job-sync-wiki-to-docs:
     runs-on: ubuntu-latest
@@ -44,7 +44,7 @@ jobs:
         with:
           source: wiki
           destination: docs
-          token: ${{ secrets.GITHUB_TOKEN }}
-          gitAuthorName: ${{ github.event.pusher.name }}
-          gitAuthorEmail: ${{ github.event.pusher.email }}
+          token: ${{ secrets.NEWRELIC_BOT_TOKEN }}
+          gitAuthorName: ${{ env.GIT_AUTHOR_NAME }}
+          gitAuthorEmail: ${{ env.GIT_AUTHOR_EMAIL }}
           branch: main
