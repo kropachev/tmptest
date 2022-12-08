@@ -26,9 +26,9 @@ jobs:
         with:
           source: docs
           destination: wiki
-          token: ${{ secrets.NEWRELIC_BOT_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           gitAuthorName: ${{ github.event.pusher.name }}
-          gitAuthorEmail: '87801165+kropachev@users.noreply.github.com'
+          gitAuthorEmail: ${{ github.event.pusher.email }}
 
   job-sync-wiki-to-docs:
     runs-on: ubuntu-latest
@@ -37,14 +37,14 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v3
         with:
-          token: ${{ secrets.NEWRELIC_BOT_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           ref: main
       - name: Sync Wiki to Docs
         uses: newrelic/wiki-sync-action@master
         with:
           source: wiki
           destination: docs
-          token: ${{ secrets.NEWRELIC_BOT_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           gitAuthorName: ${{ github.event.pusher.name }}
-          gitAuthorEmail: '87801165+kropachev@users.noreply.github.com'
+          gitAuthorEmail: ${{ github.event.pusher.email }}
           branch: main
