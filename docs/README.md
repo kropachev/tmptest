@@ -1,7 +1,5 @@
 # tmptest
 
-Again
-
 From docs folder
 Once more
 
