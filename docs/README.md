@@ -1,9 +1,6 @@
-# tmptest
+# tmptest WIKI
 
 Wiki readme, More!!!
-
-[Рид ми](README.md)
-[Оглавление1](оглавление.md)
 
 wiki
 
