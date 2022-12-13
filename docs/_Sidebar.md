@@ -1,1 +1,2 @@
-Текст Сайдбар 1
+[DevOps](DevOps.md)
+[Home](Home.md)
