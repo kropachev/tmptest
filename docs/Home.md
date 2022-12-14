@@ -1,8 +1,4 @@
-Из локального еще
-From wiki
-was:
-Home md from docs folder
+Файл Home.md
 
+Текст предисловия
 
-
-Minor change

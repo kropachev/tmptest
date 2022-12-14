@@ -1,4 +1,4 @@
-Сайдбар Из локального
+[Предисловие](Home.md)
 
-[Home](Home.md)
-[NewFile](NewFile.md)
+* [Файл NewFile](NewFile.md)
+* [файл DevOps](DevOps.md)
