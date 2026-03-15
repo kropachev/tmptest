@@ -1,0 +1,8 @@
+baseURL = "https://kropachev.github.io/tmptest/"
+title = "Мой новый сайт"
+languageCode = "ru"
+defaultContentLanguage = "ru"
+
+[module]
+  [[module.imports]]
+    path = "github.com/CaiJimmy/hugo-theme-stack/v3"

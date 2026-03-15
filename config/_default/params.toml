@@ -1,0 +1,10 @@
+mainSections = ["posts"]
+
+[sidebar]
+  emoji = ""
+  subtitle = "ИТ-менеджер, разработчик, филантроп"
+
+   [sidebar.avatar]
+    enabled = true
+    local = false
+    src = "https://github.com/kropachev.png?size=150"

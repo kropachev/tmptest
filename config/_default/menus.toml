@@ -1,0 +1,31 @@
+[[main]]
+    identifier = "home"
+    name = "Главная"
+    url = "/"
+    weight = -100
+    [main.params]
+        icon = "home"
+
+[[main]]
+    identifier = "about"
+    name = "Обо мне"
+    url = "/page/about/"
+    weight = -90
+    [main.params]
+        icon = "user"
+
+[[main]]
+    identifier = "archives"
+    name = "Архив"
+    url = "/page/archives/"
+    weight = -70
+    [main.params]
+        icon = "archives"
+
+[[main]]
+    identifier = "search"
+    name = "Поиск"
+    url = "/page/search/"
+    weight = -60
+    [main.params]
+        icon = "search"
