@@ -1,0 +1,4 @@
+- repo: https://github.com/kropachev/1c-devops-jr
+  strip_cover: true                 # опционально, по умолчанию false
+- repo: https://github.com/kropachev/1c-sync-manager
+- repo: https://github.com/kropachev/object-event-handlersi
