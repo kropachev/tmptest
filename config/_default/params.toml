@@ -1,10 +1,7 @@
-mainSections = ["posts"]
-
 [sidebar]
   emoji = ""
   subtitle = "ИТ-менеджер, разработчик, филантроп"
+  avatar = "https://github.com/kropachev.png?size=150"
 
-   [sidebar.avatar]
-    enabled = true
-    local = false
-    src = "https://github.com/kropachev.png?size=150"
+[comments]
+  enabled = false

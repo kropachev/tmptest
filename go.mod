@@ -1,8 +1,5 @@
-module github.com/kropachev/tmptest
+module github.com/PROFILE/REPOSITORY
 
 go 1.26.1
 
-require (
-	github.com/CaiJimmy/hugo-theme-stack/v3 v3.34.2 // indirect
-	gopkg.in/yaml.v3 v3.0.1 // indirect
-)
+require github.com/CaiJimmy/hugo-theme-stack/v4 v4.0.0-beta.15 // indirect

@@ -15,14 +15,6 @@
         icon = "user"
 
 [[main]]
-    identifier = "projects"
-    name = "Проекты"
-    url = "/projects/"
-    weight = -80
-    [main.params]
-        icon = "code"
-
-[[main]]
     identifier = "archives"
     name = "Архив"
     url = "/page/archives/"
