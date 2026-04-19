@@ -1,11 +1,4 @@
 {{ define "main" }}
-
-    <header>
-        <h3 class="section-title">
-                {{ .Title }}
-        </h3>
-    </header>
-
     {{- $paginator := partial "helper/paginator.html" . -}}
 
     <section class="article-list">

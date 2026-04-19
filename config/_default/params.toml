@@ -1,7 +1,24 @@
+mainSections = ["posts", "projects"]
+
 [sidebar]
   emoji = ""
   subtitle = "ИТ-менеджер, разработчик, филантроп"
   avatar = "https://github.com/kropachev.png?size=150"
+
+[widgets]
+    homepage = [
+        { type = "search" },
+        { type = "categories", params = { limit = 10 } },
+        { type = "tag-cloud", params = { limit = 10 } },
+        { type = "archives", params = { limit = 5 } },
+        # { type = "taxonomy", params = { taxonomy = "series", limit = 5, title = "Серии" } },
+    ]
+    page = [
+        { type = "search" },
+        { type = "categories", params = { limit = 10 } },
+        { type = "tag-cloud", params = { limit = 10 } },
+        { type = "toc" },
+    ]
 
 [comments]
   enabled = false

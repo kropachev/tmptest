@@ -2,7 +2,6 @@ baseURL = "https://kropachev.github.io/tmptest/"
 title = "Мой новый сайт"
 languageCode = "ru"
 defaultContentLanguage = "ru"
-mainSections = ["posts"]
 
 [module]
   [[module.imports]]
